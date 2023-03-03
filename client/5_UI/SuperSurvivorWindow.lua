@@ -315,7 +315,9 @@ end
 local WindowSuperSurvivors = ISCollapsableWindow:derive("WindowSuperSurvivors")
 
 function window_super_survivors_visibility()
-    window_super_survivors:setVisible(not window_super_survivors:isVisible())
+    if (window_super_survivors ~= nil) then -- Added nil check same issue as QuestManager open window problem
+        window_super_survivors:setVisible(not window_super_survivors:isVisible())
+    end
 end
 
 function remove_window_super_survivors()
