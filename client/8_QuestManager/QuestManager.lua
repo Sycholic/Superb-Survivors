@@ -486,7 +486,7 @@ function QuestManagerKeyDownHandle(keyNum)
 	--]]
 
 	if( keyNum == getCore():getKey("Open Quest Info Window")) then -- i key (default)
-		if (myQuestInfoWindow ~= nil) then
+		if myQuestInfoWindow then
 			myQuestInfoWindow:setVisible(not myQuestInfoWindow:getIsVisible())
 		end
 	elseif( keyNum == 57) then -- space key and figure out why this hardcoded key bind exists even for??
@@ -495,7 +495,7 @@ function QuestManagerKeyDownHandle(keyNum)
 			SSQM.BannerMSG = nil
 			SSQM.ShownBannerMSGCount = 0
 		end
-		if (myDialogueWindow ~= nil) then
+		if myDialogueWindow then
 			myDialogueWindow:skip()
 		end
 
