@@ -1,4 +1,4 @@
-require "SuperSurvivorGroupManager" --fixed invalid pathing
+require "2_Group/SuperSurvivorGroupManager"
 
 function isModEnabled(modname)
 
