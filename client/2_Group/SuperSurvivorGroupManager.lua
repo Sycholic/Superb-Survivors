@@ -1,4 +1,7 @@
-require "SuperSurvivorGroup"
+-- require "SuperSurvivorGroup"
+-- Does not need a require otherwise require("SuperSurvivorGroup") failed shows up in logs
+-- Bad? dunno but it works fine without it and that file loaded right before this one...
+-- Always... unless you start changing file names.
 
 SuperSurvivorGroupManager = {}
 SuperSurvivorGroupManager.__index = SuperSurvivorGroupManager
