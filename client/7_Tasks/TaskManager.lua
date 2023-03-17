@@ -4,7 +4,7 @@ TaskManager.__index = TaskManager
 function TaskManager:new(superSurvivor)
 
 	local o = {}
-	setmetatable(o, self)
+	setmetatable(o, self)  -- Do not cast to table:
 	self.__index = self
 	
 	o.TaskUpdateCount = 0
@@ -12,7 +12,7 @@ function TaskManager:new(superSurvivor)
 	o.parent = superSurvivor
 	o.Tasks = {}
 	o.TaskCount = 0
-	o.Tasks[0] = nil
+	o.Tasks[0] = nil -- why? is this java or what?
 	o.CurrentTask = 0
 	o.LastTask = 0
 	o.LastLastTask = 0
@@ -30,15 +30,15 @@ function TaskManager:AddToTop(newTask)
 	
 	if(newTask == nil) then return false end
 	
-	self.LastLastTask = LastTask
+	self.LastLastTask = self.LastTask
 	self.LastTask = self:getCurrentTask()
 	self.CurrentTask = newTask.Name
 	
 	if(self.LastTask == self.CurrentTask) then 
-		--print("warning. "..self.parent:getName() .. " task loop? " .. self.CurrentTask) 
+		print("warning. "..self.parent:getName() .. " task loop? " .. self.CurrentTask)
 	end
 	if(self.LastLastTaskt == self.CurrentTask) then 
-		--print("warning. "..self.parent:getName() .. " task alternating? " .. self.CurrentTask) 
+		print("warning. "..self.parent:getName() .. " task alternating? " .. self.CurrentTask)
 	end
 	
 	self.TaskUpdateCount = 0

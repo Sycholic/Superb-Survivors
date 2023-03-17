@@ -53,7 +53,7 @@ end
 
 --- func desc
 ---@param box string ammo box name
----@return integer returns the amount of bullets inside of the ammo box
+---@return number returns the amount of bullets inside of the ammo box
 function getBoxCount(box)
 	if (box == "BB177Box") then return 500
 	elseif (box == "Bullets22Box") then return 100

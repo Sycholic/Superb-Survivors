@@ -596,7 +596,7 @@ end
 
 --- gets the amount of zombies inside and around a building
 ---@param building any
----@return integer returns the amount of zombies found in the building
+---@return number returns the amount of zombies found in the building
 function NumberOfZombiesInOrAroundBuilding(building)
 	local count = 0
 	local padding = 10
