@@ -4,30 +4,19 @@
 And based on owner's seems to be SSR's official continuation.  The official mod on steam is several versions
 ahead of the source this is forked from.   Which is why this fork was created to try and bring the source up to date.
 
-  All files here are located in the media/lua directory of the mod.  Why it has not be kept in the
-same layout as the mod itself is unknown.  Any bugs fixes and/or changes would have to
-be applied manually for now (I dont see any way around this)
-
   Claim no rights to any of the original source used and if the parent repo gets updated
 it is more then welcome to use any changes.  Will not likely issue any pull requests due how much differences there are between the file/folder layout of the parent repo and the mod.
 
-  If anything would like to see the original bring the whole repo to match and follow the mod layout.
-Eg. missing folders, mod.info SurvivorOptions.lua files etc. Maybe the attack.class file source if possible?
-
-
-
-  *Note: this github page is NOT the complete mod it is only the source code in \media\lua*
-
-  If you wish to use the updates done here on this fork, you should know how to use git and github.
-
+  *Note: this github page is NOT the complete mod it is only the source code in \media\lua\*
+  
   Install the original mod. https://steamcommunity.com/sharedfiles/filedetails/?id=1905148104
-  Mod installs into your steam folder workshop\content\108600\ on the same drive where steam installed your game. You can verify this being correct by finding common folder next to workshop and then see ProjectZomboid game folder in there.
-
-  Make a copy of this fork into a UNIQUE location which then gives you a copy of the <mod>\media\lua folders and scripts then you can copy all three folders/subfolders/scripts. Copy the 3 folders and contents to where you installed your mod and the same location as these files are and overwrite them. (ie done manually...)  Ignore the .git folder (if you can see it) and README.md file they are not part of the mod just part of git.  
-
-  *Remember this is not official nor the whole mod this only source code. It is just fixing bugs as they are found*
   
-  *If you do a 'verify integrity of game files' it will see the changes and reinstall the mod and undoing anything*
-    *that was copied from this repo.  This will also happen if the mod itself gets updated on steam.*
+  Go to where this mod installed and copy the folder "Superb-Survivors" in the workshop\content\108600\1905148104\mods folder.  Open the folder for PZ in your home directory called Zomboid\mods and paste a copy of the original mod here, rename it to something else and then open that folder.  Edit the mod.info file and change the "name=Superb Surivors" to something else. Eg. name=Superb Survivors 4178  This allows you to know which mod you are using (and this way you do not change the original mod)
+
+  Install/download this fork into a UNIQUE location.  You only get a copy of the media\lua folders and scripts (not the whole mod).  Copy the media/lua folder to where you created a copy of the original mod and the same location as these files are and overwrite them. (ie done manually...)  Ignore the .git folder (if you can see it) and README.md file they are not part of the mod just part of git.  
+
+  *Remember this is not official nor the whole mod this only the lua source code.*
   
-  *This is 'use at your own risk' and only was created to offer bugfixes back to the original authors*
+  *If a new version of the mod is released on steam this will not change anything you do, only the original mod will get updated not your local copy/modified version*
+  
+  *This is 'use at your own risk' and only was created to offer bugfixes back to the original authors but anyone is more then welcome to use and test these changes.*
